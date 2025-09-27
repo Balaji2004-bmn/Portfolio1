@@ -1,17 +1,17 @@
 
 :root {
---primary-blue: #29ABE2;
---secondary-blue: #1E8BC3;
+--primary-blue: lab(57.96% 62.72 68.64 / 0.959);
+--secondary-blue: #e45c0e;
 --accent-red: #ff0040;
---dark-bg: #0a0a0a;
---darker-bg: #050505;
---terminal-blue: #00d4ff;
---matrix-blue: #29ABE2;
---glow-blue: #29ABE280;
+--dark-bg: #4b4444;
+--darker-bg: #686060;
+--terminal-blue: #ff7300;
+--matrix-blue: rgb(233, 178, 29);
+--glow-blue: #e27c2980;
 --glow-red: #ff004080;
 --default-color: #c9c7c7; /* Default color used for the majority of the text content across the entire website */
 --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
---accent-color: #2df81e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+--accent-color: #ecb417; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
 --contrast-color: #0a090f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 --primary-color: #ff0040;
 --secondary-color: #1E8BC3 ;
@@ -20,14 +20,14 @@
 --card-bg: #1a1a1a;
 --text-light: #ffffff;
 --text-muted: #cccccc;
---primary: #29ABE2;
+--primary: #e76418;
 --secondary: #ff0040;
 --dark: #050505;
 --darker: #0a0a0a;
 --text: #fff;
 --text-muted: #ccc;
---gradient-primary: linear-gradient(135deg, #29ABE2 0%,  #1E8BC3 100%);
---gradient-secondary: linear-gradient(135deg, #00d4ff 0%, #7c4dff 100%);
+--gradient-primary: linear-gradient(135deg, #e26d29 0%,  #ec8734 100%);
+--gradient-secondary: linear-gradient(135deg, #ff9900 0%, #7c4dff 100%);
 --gradient-dark: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
 }
 
@@ -258,11 +258,9 @@ border-radius: 2px;
 
 /* About Section */
 .about-card {
-  padding: 20px;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+background: none;
+padding: 20px;
+transition: all 0.3s ease;
 }
 .about-content {
 display: grid;
@@ -290,7 +288,7 @@ position: relative;
 
 .stat-box:hover {
 transform: scale(1.05);
-box-shadow: 0 15px 40px rgba(0,255,65,0.5);
+box-shadow: 0 15px 40px rgba(245, 164, 14, 0.5);
 }
 
 .stat-number { font-size: 2rem; font-weight: 900; color: var(--secondary); }
@@ -313,7 +311,7 @@ color: var(--text);
 
 .skill-category:hover {
 transform: scale(1.05);
-box-shadow: 0 15px 40px rgba(0,255,65,0.5);
+box-shadow: 0 15px 40px rgba(240, 190, 25, 0.5);
 }
 
 .skill-list {
@@ -325,7 +323,7 @@ margin: 0;
 
 .skill-list li {
 padding: 0.5rem 0 0.5rem 1.5rem;
-border-bottom: 1px solid #008f11;
+border-bottom: 1px solid #f1941a;
 position: relative;
 }
 
@@ -403,7 +401,7 @@ padding: 0.5rem 0;
 border-bottom: 1px solid var(--secondary-green);
 position: relative;
 padding-left: 1.5rem;
-color: white;
+color: rgb(214, 206, 206);
 }
 
 .skill-list li::before {
@@ -450,9 +448,9 @@ transition: 0.3s ease;
 
 .filter-btn:hover,
 .filter-btn.active {
-background: #00ff41;
+background: #dfeb76;
 color: #000;
-border-color: #00ff41;
+border-color: #eea47a;
 }
 
 
@@ -472,7 +470,7 @@ gap: 20px;
 
 .portfolio-item:hover {
 transform: scale(1.03);
-box-shadow: 0 0 25px #00ff41;
+box-shadow: 0 0 25px #8fe0f8;
 }
 
 .portfolio-item img {
@@ -484,8 +482,8 @@ display: block;
 .portfolio-info {
 position: absolute;
 inset: 0;
-background: rgba(0, 0, 0, 0.85);
-color: #0f0;
+background: rgba(56, 50, 50, 0.85);
+color: rgb(231, 241, 134);
 padding: 20px;
 opacity: 0;
 display: flex;
@@ -667,7 +665,7 @@ transition: all 0.3s ease;
 }
 
 .form-control:focus {
-background: rgba(255, 255, 255, 0.15);
+background: rgba(14, 13, 13, 0.15);
 border-color: var(--primary-color);
 box-shadow: 0 0 0 0.2rem rgba(255, 0, 64, 0.25);
 color: var(--text-light);
@@ -718,7 +716,7 @@ box-shadow: 0 15px 40px rgba(255, 0, 64, 0.4);
 
 /* Badges */
 .badge-card {
-background: rgba(255, 255, 255, 0.05);
+background: rgba(14, 13, 13, 0.05);
 border-radius: 15px;
 padding: 25px;
 text-align: center;
@@ -815,19 +813,19 @@ align-items: center;
 width: 4rem; /* Increase size */
 height: 4rem; /* Increase size */
 background-color: transparent;
-border: 0.2rem solid rgb(26, 195, 11);
+border: 0.2rem solid rgb(238, 162, 112);
 font-size: 2.5rem; /* Increase icon size */
 border-radius: 50%;
 margin: 1rem; /* Adjust spacing */
 transition: 0.3s ease;
-color: aquamarine;
+color: rgb(235, 139, 76);
 } 
 
 .logo-page a:hover {
 color: #03010a;
 transform: scale(1.3) translateY(-5px);
-background-color: aquamarine;
-box-shadow: 0 0 25px aquamarine;
+background-color: rgb(247, 193, 78);
+box-shadow: 0 0 25px rgb(250, 145, 47);
 }
 
 
@@ -867,13 +865,13 @@ z-index: -1;
 /* Card Content */
 .card-content {
   background: #111;
-  border: 2px solid #00ff41;
+  border: 2px solid #f38c38;
   padding: 20px;
   border-radius: 16px;
   width: 90%;
   max-width: 500px;
-  color: #0f0;
-  box-shadow: 0 0 25px #00ff41;
+  color: rgb(233, 149, 22);
+  box-shadow: 0 0 25px #ee9938;
   transform: translateY(-30px);
   transition: transform 0.4s ease;
 }
@@ -915,6 +913,6 @@ z-index: -1;
   transition: 0.3s;
 }
 .btn-group .btn:hover {
-  background: #29ABE2;
+  background: #e4a00f;
   color: #000;
 }

@@ -7,7 +7,7 @@ AOS.init({
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/shivani-s0987/shivani-s0987/main/assets/resume/resume.pdf';
+    link.href = 'https://raw.githubusercontent.com/Balaji2004-bmn/Portfolio1/main/assets/resume/Balaji_Nidavanche.pdf'; // Corrected RAW GitHub URL
     link.download = 'resume.pdf';
 
     // For demo purposes, show an alert
@@ -19,13 +19,15 @@ function downloadResume() {
 }
 
 // Typewriter Effect
+// Typewriter Effect
 const texts = [
-    "Cybersecurity Enthusiast",
-    "Python Django Developer",
-    "Ethical Hacker",
-    "Threat Intelligence Analyst",
-    "Security Researcher"
+    "Full-Stack Developer",
+    "Frontend Engineer (React / Angular)",
+    "Backend Developer (Node.js / Spring Boot)",
+    "Database Designer (MySQL / MongoDB)",
+    "API Integration Specialist"
 ];
+
 
 let textIndex = 0;
 let charIndex = 0;
@@ -198,8 +200,8 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
 });
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/anurag-rvnkr1/anurag-rvnkr/main/assets/resume/Anurag-Rvnkr-Resume.pdf'; // Corrected RAW GitHub URL
-    link.download = 'Anurag-Rvnkr-Resume.pdf';
+    link.href = 'https://raw.githubusercontent.com/Balaji2004-bmn/Portfolio1/main/assets/resume/Balaji_Nidavanche.pdf'; // Corrected RAW GitHub URL
+    link.download = 'Balaji-Nidavanche.pdf';
 
     document.body.appendChild(link);
     link.click();
@@ -247,90 +249,6 @@ window.addEventListener('load', function () {
     }, 100);
 });
 
-        // Matrix Rain Effect - COMMENTED OUT
-        /*
-        const canvas = document.querySelector('.matrix-bg');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-
-        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
-        const matrixArray = matrix.split("");
-
-        const fontSize = 10;
-        const columns = canvas.width / fontSize;
-        const drops = [];
-
-        for (let x = 0; x < columns; x++) {
-            drops[x] = 1;
-        }
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.04)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.fillStyle = '#00ff41';
-            ctx.font = fontSize + 'px monospace';
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
-                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 35);
-        */
-
-        // Particles Animation - COMMENTED OUT
-        /*
-        class Particle {
-            constructor() {
-                this.x = Math.random() * window.innerWidth;
-                this.y = Math.random() * window.innerHeight;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 3 - 1.5;
-                this.speedY = Math.random() * 3 - 1.5;
-                this.color = Math.random() > 0.5 ? '#00ff41' : '#ff0040';
-            }
-
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                if (this.x > window.innerWidth) this.x = 0;
-                if (this.x < 0) this.x = window.innerWidth;
-                if (this.y > window.innerHeight) this.y = 0;
-                if (this.y < 0) this.y = window.innerHeight;
-            }
-
-            draw() {
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        const particles = [];
-        for (let i = 0; i < 50; i++) {
-            particles.push(new Particle());
-        }
-
-        function animateParticles() {
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
-            });
-        }
-        */
-
- 
   // Mapping of portfolio classes -> card IDs
   const projectMap = {
     "fullstack": "project1-card",

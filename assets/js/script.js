@@ -17,12 +17,13 @@ function downloadResume() {
 
 
 const texts = [
-  "Full-Stack Developer",
-  "Frontend Engineer (React / Angular)",
-  "Backend Developer (Node.js / Spring Boot)",
-  "Database Designer (MySQL / MongoDB)",
-  "API Integration Specialist"
+  "Frontend Developer",
+  "UI Engineer (HTML / CSS / JavaScript)",
+  "React.js Developer",
+  "Responsive Web Designer",
+  "Web Performance Enthusiast"
 ];
+
 
 let textIndex = 0;
 let charIndex = 0;

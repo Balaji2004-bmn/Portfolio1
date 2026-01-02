@@ -9,11 +9,10 @@
 --matrix-blue: rgb(233, 178, 29);
 --glow-blue: #e27c2980;
 --glow-red: #ff004080;
---default-color: #c9c7c7; /* Default color used for the majority of the text content across the entire website */
---heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
---accent-color: #ecb417; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
---contrast-color: #0a090f; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
---primary-color: #ff0040;
+--default-color: #c9c7c7; 
+--heading-color: #ffffff; 
+--accent-color: #ecb417; 
+--contrast-color: #0a090f; 
 --secondary-color: #1E8BC3 ;
 --accent-color: #7c4dff;
 --dark-bg: #0a0a0a;

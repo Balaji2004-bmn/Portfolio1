@@ -120,7 +120,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// ===================== ACTIVE NAV LINK =====================
+
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
